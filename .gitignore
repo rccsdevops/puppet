@@ -1,0 +1,66 @@
+# --- Puppet-specific ignores ---
+# Compiled catalogs & reports
+reports/
+catalogs/
+
+# SSL certificates and private keys
+ssl/
+. puppetlabs/
+
+# Logs
+log/
+*.log
+
+# Temporary data
+tmp/
+cache/
+
+# r10k / Code Manager artifacts
+.r10k.yaml
+.Puppetfile.lock
+
+# --- Terraform-specific ignores ---
+# Local .terraform directories
+.terraform/
+
+# Lock file (may be committed only if you want to pin providers)
+.terraform.lock.hcl
+
+# State files
+terraform.tfstate
+terraform.tfstate.*
+
+# Crash logs
+crash.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Variable files (often contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Local environment / creds
+.env
+*.pem
+*.key
+*.crt
+
+# --- General-development ignores ---
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Python / Ruby artifacts (if used in tooling)
+__pycache__/
+*.pyc
+*.pyo
+.bundle/
+vendor/
