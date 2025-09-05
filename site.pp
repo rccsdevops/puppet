@@ -1,5 +1,7 @@
 # /etc/puppetlabs/code/environments/production/manifests/site.pp
 
+notify { 'This is version 1.1.0 of our Puppet configuration': }
+
 # Default for everyone else
 node default {
   file { '/tmp/hello-puppet.txt':
